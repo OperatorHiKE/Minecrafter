@@ -1,19 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Minecrafter</title>
-    <link rel="stylesheet "href="index.css">
-</head>
-<body>
-<h1>Minecrafter</h1>
+<html>
+<title>Minecrafter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<button>Mine</button>
-<button>Village</button>
-<button>Inventory</button>
-<button>Pickaxe</button>
-<button onclick="document.location='authorization.html'">Authorization</button>
-<button>Shop</button>
-
+<body onbeforeunload="return closingCode()">
+<link rel="stylesheet" href="css/index.css">
+<script src="index.js"></script>
+<center class='center'>
+    <div class="bg-container">
+        <h1 id='total' style="color: white">Mining Power: 0</h1>
+        <h5 id="click" style="font-family:trebuchet MS; color: white">Mining/click: 1 | Labour Force/sec: 0</h5>
+        <img class="round" src="Pictures/7b88e22d-2b87-489b-8587-3a85d88fd040.jpeg" width="150" onclick='clicked()'></img>
+        <br><br>
+        <button id='upgrade' class="round" onclick='upgrade("upgrade")' style="font-family:courier;">0-main upgrade: 15</button>
+        <br><br>
+        <button id='cat' class="round" onclick='upgrade("clicker cat")' style="font-family:courier;">0-clicker cat: 25 | +1/sec</button>
+        <br><br>
+        <button id='worker' class="round" onclick='upgrade("worker")' style="font-family:courier;">0-worker: 250 | +15/sec</button><br><br>
+        <button class="settings" onclick="document.location='verification.html'">Registration</button>
+        <button class="settings" onclick="load()">Load</button>
+        <button class="settings" onclick="reset()">Reset</button><br><br>
+    </div>
+</center>
+</link>
 </body>
+</meta>
+
 </html>
