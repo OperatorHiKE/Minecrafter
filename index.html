@@ -1,12 +1,19 @@
-<html>
-<title>Minecrafter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Minecrafter</title>
+    <script src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" defer></script>
+</head>
 <body onbeforeunload="return closingCode()">
-<link rel="stylesheet" href="css/index.css">
-<script src="index.js"></script>
-<center class='center'>
-    <div class="bg-container">
+
+
+<div class="bg-container">
+    <div class="main_menu">
         <h1 id='total' style="color: white">Mining Power: 0</h1>
         <h5 id="click" style="font-family:trebuchet MS; color: white">Mining/click: 1 | Labour Force/sec: 0</h5>
         <img class="round" src="Pictures/7b88e22d-2b87-489b-8587-3a85d88fd040.jpeg" width="150" onclick='clicked()'></img>
@@ -20,9 +27,9 @@
         <button class="settings" onclick="load()">Load</button>
         <button class="settings" onclick="reset()">Reset</button><br><br>
     </div>
-</center>
+
+</div>
+
 </link>
 </body>
-</meta>
-
 </html>

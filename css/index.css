@@ -1,59 +1,66 @@
-body {
+* {
     margin: 0;
-    height: 100%;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
 }
 .center {
     margin: 40px;
 }
 
-.bg-container{
-    background: url('/Pictures/9ac665ad-3601-417f-aed6-fd596bddeafe.jpeg') no-repeat;
-    height: 100%;
-    width: 100%;
+.bg-container {
+    background: url('/Pictures/9ac665ad-3601-417f-aed6-fd596bddeafe.jpeg');
+    height: 100vh;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.topbar{
+.topbar {
     overflow: hidden;
-    background: #C8CBD0;
-    box-shadow: 0px 4px 0 0 #4D5259;
+    background: #c8cbd0;
+    box-shadow: 0px 4px 0 0 #4d5259;
 }
 
 .topbar a {
-    background: #748E54;
+    background: #748e54;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    box-shadow: 4px 0px 0 0 #54673C;
+    box-shadow: 4px 0px 0 0 #54673c;
 }
 
 .topbar a:hover {
-    background-color: #92AC72;
+    background-color: #92ac72;
     color: black;
 }
 
 .topbar a.active {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
 }
 
-.round{
+.round {
     font-size: 12px;
-    color: #4D5259;
+    color: #4d5259;
     line-height: 1.5;
     font-weight: bold;
-    padding: .5em 2em;
-    background: #FFFFFF;
-    border: 2px solid #4D5259;
-    box-shadow: 4px 4px 0 0 #4D5259;
+    padding: 0.5em 2em;
+    background: #ffffff;
+    border: 2px solid #4d5259;
+    box-shadow: 4px 4px 0 0 #4d5259;
     border-radius: 100px;
-    outline:0;
-    transition: ease all .1s;
+    outline: 0;
+    transition: ease all 0.1s;
 }
 .round:active {
     transform: translateY(4px) translateX(4px);
-    box-shadow: 0px 0px 0 0 #4D5259;
+    box-shadow: 0px 0px 0 0 #4d5259;
 }
 .round:hover {
     background: #d3d3d3;
@@ -61,19 +68,19 @@ body {
 
 .settings {
     font-size: 10px;
-    color: #4D5259;
+    color: #4d5259;
     line-height: 1.5;
     font-weight: bold;
-    padding: .5em 2em;
-    background: #FFFFFF;
-    border: 2px solid #4D5259;
-    box-shadow: 4px 4px 0 0 #4D5259;
-    outline:0;
+    padding: 0.5em 2em;
+    background: #ffffff;
+    border: 2px solid #4d5259;
+    box-shadow: 4px 4px 0 0 #4d5259;
+    outline: 0;
 }
 
 .settings:active {
     transform: translateY(4px) translateX(4px);
-    box-shadow: 0px 0px 0 0 #4D5259;
+    box-shadow: 0px 0px 0 0 #4d5259;
 }
 .settings:hover {
     background: #d3d3d3;
